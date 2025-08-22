@@ -13,12 +13,12 @@ export default {
       },
       colors: {
         primary: {
-          1: "#FFFFFF",
+          1: "#e0e7fe",
           2: "#efefef"
         },
         secondary: {
-          1: "#1B1818",
-          2 : "#1c1d1b"
+          1: "##3e38a7",
+          2 : "#5046e4"
         },
         cardColor: {
           1: '#333333',
