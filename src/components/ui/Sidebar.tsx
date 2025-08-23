@@ -49,7 +49,7 @@ const Sidebar: React.FC<SidebarProps> = ({
             className={`fixed top-0 left-0 bottom-0 z-50 bg-blue-100 shadow-lg transition-all duration-300 ease-in-out ${isOpen ? 'w-40 md:w-60 ' : 'w-0'}`}
         >
             <div className="flex flex-col h-full">
-                <div className={`flex items-center justify-between px-2 py-4 ${isOpen && 'border-b-4 border-cardColor-1 '}`}>
+                <div className={`flex items-center justify-between px-2 py-4 ${isOpen && 'border-b-4 border-blue-400 '}`}>
                     <div className="h-[30px] w-full flex items-center justify-between">
                         {isOpen && 
                             <Heading variant="primary" size="sm" className="text-blue-500 flex gap-2 items-center">
@@ -83,7 +83,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                 )}
 
                 {isOpen && showLogout && onLogout && (
-                    <div className="p-4 border-t-4 border-cardColor-1">
+                    <div className="p-4 border-t-4 border-blue-400">
                         <button
                             onClick={onLogout}
                             className="w-full bg-red-500 text-white font-font1 font-semibold tracking-wider py-2 rounded-md hover:bg-red-600 transition-colors"

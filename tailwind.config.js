@@ -13,24 +13,24 @@ export default {
       },
       colors: {
         primary: {
-          1: "#003049",
-          2: "#003049"
+          1: "blue-500",
+          2: "blue-400"
         },
         secondary: {
-          1: "#003049",
-          2 : "#003049"
+          1: "blue-600",
+          2 : "blue-500"
         },
         cardColor: {
-          1: '#d4e09b',
-          2: '#d62828',
-          3: '#d62828'
+          1: 'black',
+          2: 'black',
+          3: 'black'
         },
-        border: "#2d6a4f",
+        border: "black",
         logout:{
-          1: 'rgb(100 20 28)',
-          2: "rgb(150 28 8)"
+          1: 'rgb(0 20 28)',
+          2: "rgb(0 28 8)"
         },
-        text: "#FFFFFF",
+        text: "white",
         darkBackground: "#d62828"
     },
   },

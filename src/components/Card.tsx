@@ -107,15 +107,15 @@ const Card: React.FC<CardType> = ({
                     href={sideOpen ? undefined : link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`${sideOpen ? '' : 'hover:text-blue-600 '} mb-2 inline-block font-medium font-font1 text-[0.7rem] md:text[0.75rem] lg:text-[0.85rem] tracking-normal
-                    text-cardColor-3`}
+                    className={`${sideOpen ? '' : ' hover:text-blue-600 '} mb-2 inline-block font-medium font-font1 text-[0.7rem] md:text[0.75rem] lg:text-[0.85rem] tracking-normal
+                    text-black`}
                 >
                     View Content
                 </a>
             )}
             
             {createdAt && (
-                <p className="text-xs text-cardColor-2 my-2">
+                <p className="text-xs text-black my-2">
                     <span className="font-font1 font-semibold text-[0.7rem] md:text[0.75rem] lg:text-[0.85rem] tracking-normal">
                         Created At:
                         <span className="ml-1 font-medium tracking-wider ">

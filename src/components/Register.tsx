@@ -101,7 +101,7 @@ const Register = ({ setCurrent }: { setCurrent: Dispatch<SetStateAction<string>>
   }
 
   return (
-    <div className='bg-blue-200'>
+    <div className='bg-blue-200 '>
         <FormContainer
           title="Create an Account"
           subtitle="Join us today!"

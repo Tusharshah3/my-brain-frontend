@@ -29,7 +29,7 @@ const FormContainer: React.FC<FormContainerProps & {
     setPassword?.(import.meta.env.VITE_TEST_PASSWORD)
   }
   return (
-    <div className='container flex flex-col justify-center items-center mx-auto text-yellow-500'>
+    <div className='container flex flex-col justify-center items-center mx-auto text-blue-500'>
       <div className='formContainer min-w-[15em] md:min-w-[30em] border-2 border-border p-4 rounded-md flex flex-col gap-2'>    
         <div className='flex w-full justify-between items-center'>
           <Heading variant='primary' size='md' className='text-white'>
@@ -44,7 +44,7 @@ const FormContainer: React.FC<FormContainerProps & {
                 >
                   <EllipsisVertical />
                 </button>
-                <div className="tooltip">
+                <div className="tooltip bg-blue-400">
                   Test Creds
                 </div>
               </div>
@@ -54,7 +54,7 @@ const FormContainer: React.FC<FormContainerProps & {
         <Heading variant='secondary' size='xs'>
           {subtitle}
         </Heading>
-        <form className='flex flex-col gap-3 text-pink-900' onSubmit={onSubmit}>
+        <form className='flex flex-col gap-3 text-black' onSubmit={onSubmit}>
           {children}
         </form>
       </div>
