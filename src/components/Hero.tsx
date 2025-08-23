@@ -9,8 +9,8 @@ const Hero = ({ setCurrent }: { setCurrent: Dispatch<SetStateAction<string>> }) 
    const setHeroTitle = useSetRecoilState(heroTitleinput);
    const setHeroLink = useSetRecoilState(heroLinkinput);
 
-   const [tempTitle, setTempTitle] = useState<string | null>(null);
-   const [tempLink, setTempLink] = useState<string | null>(null);
+   const [tempTitle] = useState<string | null>(null);
+   const [tempLink] = useState<string | null>(null);
 
   
 
