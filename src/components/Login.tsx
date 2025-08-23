@@ -107,7 +107,7 @@ const Login = () => {
   }
 
   return (
-    <div>  
+    <div className='bg-blue-200'>  
       <FormContainer
       title="Login"
       subtitle="Welcome back! "
@@ -124,6 +124,7 @@ const Login = () => {
           disabled={authLoading}
           label={'Username'}
           inputId={'username'}
+          
         />
         {errors.username && (
           <p className='text-red-500 text-sm mt-1'>{errors.username}</p>

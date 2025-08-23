@@ -14,8 +14,8 @@ const sizeStyles = {
     "lg": "text-[2.5rem] md:text-[3.5rem] lg:text-[4rem]"
 }
 const variantStyles = {
-    "primary" : "font-font1 font-semibold tracking-tight text-text ",
-    "secondary": "font-semibold text-border",
+    "primary" : "font-font1 font-bold tracking-tight text-blue-700 ",
+    "secondary": "text-lg font-semibold text-border text-blue-600 font-font1 ",
 }
 
 const Heading: React.FC<HeadingProps> = (

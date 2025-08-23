@@ -15,12 +15,12 @@ const Input: React.FC<InputProps> = ({
     return (
         <>
             {label && inputId && (
-                <label htmlFor={inputId} className='text-text text-[1rem] lg:text-[1.2rem] h-[2.7rem] font-font1 font-medium tracking-wider'>
+                <label htmlFor={inputId} className='text-text text-bg-black text-[1rem] lg:text-[1.2rem] h-[2.7rem] font-font1 font-medium tracking-wider'>
                     {label}
                 </label>
             )}
             <input
-                className="bg-secondary-2 placeholder-border text-white text-[0.8rem] lg:text-[1rem] h-[2.5rem] px-3 w-full"
+                className="bg-blue-100 placeholder-border text-black text-[0.8rem] lg:text-[1rem] h-[2.5rem] px-3 w-full"
                 id={inputId || undefined} 
                 {...props}
             />

@@ -36,9 +36,9 @@ const SeachSuggestions : React.FC<SearchSuggestionsType> = ({
         setShareModalStatus(true)
     }
     return (
-    <div className="absolute bg-cardColor-2 rounded-lg top-[50%] w-full h-fit pt-10 pb-4 px-5 flex gap-2 flex-col"> 
+    <div className="absolute bg-blue-100 rounded-lg top-[50%] w-full h-fit pt-10 pb-4 px-5 flex gap-2 flex-col"> 
         {isLoading ? (
-            <div className="py-10 text-center text-gray-600">
+            <div className="py-10 text-center text-gray-400">
                 <Loader className="w-8 h-8 mx-auto animate-spin duration-[2000ms]" />
             </div>
         ) 
@@ -48,7 +48,7 @@ const SeachSuggestions : React.FC<SearchSuggestionsType> = ({
                     <a href={result.link} target="__blank">
                         <div
                             key={index}
-                            className="p-2 cursor-pointer hover:bg-cardColor-1 rounded-md text-gray-600 hover:text-gray-200 transition-colors flex gap-2 shadow-md"
+                            className="p-2 cursor-pointer hover:bg-blue-200 rounded-md text-blue-300 hover:text-blur-400 transition-colors flex gap-2 shadow-md"
                         >
                             
                                 {result.title}
@@ -59,7 +59,7 @@ const SeachSuggestions : React.FC<SearchSuggestionsType> = ({
                 defaultOptions.map((option, index) => (
                     <div
                         key={index}
-                        className="p-2  cursor-pointer hover:bg-cardColor-1 rounded-md text-gray-600 hover:text-gray-200 transition-colors flex gap-2 shadow-md"
+                        className="p-2 cursor-pointer bg-blue-200 rounded-md text-blue-500 hover:text-blue-600   transition-colors flex gap-2 shadow-md"
                         onClick={option.onClick}
                     >
                         {option.icon} {option.text}

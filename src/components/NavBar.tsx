@@ -5,7 +5,7 @@ import { Dispatch, SetStateAction } from 'react'
 export const NavBar = ({ setCurrent }: { setCurrent: Dispatch<SetStateAction<string>> }) => {
 
     return (
-        <div className="flex justify-between items-center text-text">
+        <div className="flex justify-between items-center text-blue-600">
             <div className="brand flex gap-2 items-center">
                 <Brain 
                     className="w-6 h-6 md:w-10 md:h-10 cursor-pointer" 

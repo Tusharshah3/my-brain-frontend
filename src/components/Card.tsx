@@ -65,21 +65,25 @@ const Card: React.FC<CardType> = ({
         }
     }
     return (
-        <div className="bg-cardColor-1  border-2 border-border rounded-lg px-4 py-2 shadow-md relative">
-            <div className="flex justify-between">
-                <div className="flex gap-2 items-center">
+        <div className="bg-blue-100  border-2 text-black border-blue-600 rounded-lg px-4 py-2 shadow-md relative">
+            <div className="flex justify-between ">
+                <div className="flex gap-2 items-center  hover:text-blue-900">
                     {TypeStyles[type!]}
                     <span className=" font-font1 text-[1rem] md:text[1.1rem] lg:text-[1.2rem] font-semibold tracking-normal break-words w-full line-clamp-2">{title}</span>
                 </div>
                 {
                     !variant && 
                     <div className="flex gap-2">
+                        <div className="flex items-center hover:text-white hover:bg-blue-500 hover:cursor-pointer rounded-md p-1">
                         <button onClick={() => setUpdateModal?.(true)} disabled={sideOpen}>
-                            <FilePenLine className="w-5 h-5 md:w-6 md:h-6" />
+                            <FilePenLine className="w-5 h-5 md:w-6 md:h-6 " />
                         </button>
+                        </div>
+                        <div className="flex items-center hover:text-white hover:bg-blue-500 hover:cursor-pointer rounded-md p-1">
                         <button onClick={() => deleteContent(contentId)} disabled={sideOpen}>
                             <Trash className="w-5 h-5 md:w-6 md:h-6" />
                         </button>
+                        </div>
                     </div>
                 }
             </div>
@@ -89,7 +93,7 @@ const Card: React.FC<CardType> = ({
                         tags.map((tag) => (
                             <li
                                 key={tag.tagId}
-                                className="bg-cardColor-2  text-xs px-2 py-1 rounded"
+                                className="bg-blue-200 justify-center  text-xs px-2 py-1 rounded"
                             >
                                 # {tag.title}
                             </li>
@@ -103,7 +107,7 @@ const Card: React.FC<CardType> = ({
                     href={sideOpen ? undefined : link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`${sideOpen ? '' : 'hover:text-primary-2 '} mb-2 inline-block font-medium font-font1 text-[0.7rem] md:text[0.75rem] lg:text-[0.85rem] tracking-normal
+                    className={`${sideOpen ? '' : 'hover:text-blue-600 '} mb-2 inline-block font-medium font-font1 text-[0.7rem] md:text[0.75rem] lg:text-[0.85rem] tracking-normal
                     text-cardColor-3`}
                 >
                     View Content

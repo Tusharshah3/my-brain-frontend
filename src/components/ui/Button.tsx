@@ -9,8 +9,8 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const variantStyles = {
-    primary: "bg-primary-1 text-black hover:bg-primary-2 ",
-    secondary: "bg-secondary-1 border-2 border-white hover:bg-cardColor-1 text-white",
+    primary: "bg-blue-600 text-white hover:bg-blue-500 ",
+    secondary: "bg-blue-600  border-white hover:bg-blue-500 text-white",
 };
 
 const fontStyles = {
@@ -26,7 +26,7 @@ const Button: React.FC<ButtonProps> = ({
     onClick,
     ...props
 }) => {
-    const baseStyle = "px-2 py-1 md:px-3 md:py-2 rounded antialiased  font-semibold";
+    const baseStyle = "px-2 py-1 md:px-3 md:py-2 rounded-md antialiased  font-semibold";
 
     return (
         <button

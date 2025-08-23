@@ -13,25 +13,25 @@ export default {
       },
       colors: {
         primary: {
-          1: "#e0e7fe",
-          2: "#efefef"
+          1: "#003049",
+          2: "#003049"
         },
         secondary: {
-          1: "##3e38a7",
-          2 : "#5046e4"
+          1: "#003049",
+          2 : "#003049"
         },
         cardColor: {
-          1: '#333333',
-          2: '#262626',
-          3: '#888888'
+          1: '#d4e09b',
+          2: '#d62828',
+          3: '#d62828'
         },
-        border: "#404040",
+        border: "#2d6a4f",
         logout:{
-          1: 'rgb(239 68 68)',
-          2: "rgb(185 28 28)"
+          1: 'rgb(100 20 28)',
+          2: "rgb(150 28 8)"
         },
         text: "#FFFFFF",
-        darkBackground: "#1B1818"
+        darkBackground: "#d62828"
     },
   },
   plugins: [],

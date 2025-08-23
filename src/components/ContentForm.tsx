@@ -108,7 +108,7 @@ const ContentForm: React.FC<ContentFormProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+    <div className="fixed inset-0 bg-white bg-opacity-50 flex justify-center items-center z-50">
       <div className="bg-white p-5 rounded-lg shadow-xl relative w-[250px] md:w-[350px] text-black font-font1
        text-[0.75rem] lg:text-[1rem]">
         <Button

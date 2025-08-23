@@ -44,19 +44,10 @@ const Hero = ({ setCurrent }: { setCurrent: Dispatch<SetStateAction<string>> }) 
                     size='xs'
                     className='mx-auto'
                 >
-                    Organize your thoughts, one link at a time!
+                    Organize your thoughts, in single click!
                 </Heading>
-                <Input 
-                    value={tempTitle || ''} 
-                    onChange={handleTitleChange} 
-                    placeholder='Title...' 
-                />
-                <Input 
-                    value={tempLink || ''} 
-                    onChange={handleLinkChange} 
-                    placeholder='Link...' 
-                />
-                <div className='mx-auto'>
+               
+                <div className='mx-auto rounded-full'>
                     <Button variant='secondary' onClick={handleGetStarted}>
                         <h1 className='text-[0.8rem] md:text-[1rem] font-medium'>Get Started</h1>
                     </Button>        

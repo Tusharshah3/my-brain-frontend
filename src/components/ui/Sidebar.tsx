@@ -46,20 +46,20 @@ const Sidebar: React.FC<SidebarProps> = ({
 
     return (
         <div 
-            className={`fixed top-0 left-0 bottom-0 z-50 bg-cardColor-2 shadow-lg transition-all duration-300 ease-in-out ${isOpen ? 'w-40 md:w-60 ' : 'w-0'}`}
+            className={`fixed top-0 left-0 bottom-0 z-50 bg-blue-100 shadow-lg transition-all duration-300 ease-in-out ${isOpen ? 'w-40 md:w-60 ' : 'w-0'}`}
         >
             <div className="flex flex-col h-full">
                 <div className={`flex items-center justify-between px-2 py-4 ${isOpen && 'border-b-4 border-cardColor-1 '}`}>
                     <div className="h-[30px] w-full flex items-center justify-between">
                         {isOpen && 
-                            <Heading variant="primary" size="sm" className="flex gap-2 items-center">
+                            <Heading variant="primary" size="sm" className="text-blue-500 flex gap-2 items-center">
                                 <Brain className="hover:cursor-pointer" onClick={() => navigate('/')}/>
                                 <span className="hover:cursor-pointer" onClick={() => navigate('/')}>
                                     My-Brain
                                 </span>
                             </Heading>
                         }
-                        <button className="p-1 hover:bg-cardColor-1 rounded-lg" onClick={toggleSidebar}>
+                        <button className="p-1 hover:bg-blue-500 hover:text-white rounded-lg " onClick={toggleSidebar}>
                             {isOpen ? <X /> : <ChevronRight />}
                         </button>
                     </div>
@@ -72,7 +72,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                                 <button
                                     key={item.filter}
                                     onClick={() => handleFilter(item.filter)}
-                                    className="flex items-center gap-3 w-full p-2 text-white hover:bg-cardColor-1 rounded-md transition-colors"
+                                    className="flex items-center gap-3 w-full p-2 text-blue-500 hover:bg-blue-700 hover:text-white rounded-md transition-colors"
                                 >
                                     {item.icon}
                                     <span>{item.label}</span>
@@ -86,7 +86,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                     <div className="p-4 border-t-4 border-cardColor-1">
                         <button
                             onClick={onLogout}
-                            className="w-full bg-logout-1 text-white font-font1 font-semibold tracking-wider py-2 rounded-md hover:bg-logout-2 transition-colors"
+                            className="w-full bg-red-500 text-white font-font1 font-semibold tracking-wider py-2 rounded-md hover:bg-red-600 transition-colors"
                         >
                             Logout
                         </button>

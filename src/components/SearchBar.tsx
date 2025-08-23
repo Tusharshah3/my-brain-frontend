@@ -118,7 +118,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
                             ref = {inputRef}
                             value={searchedTerm} 
                             onChange={handleInputChange} 
-                            className="w-full bg-cardColor-2 py-4 px-6 rounded-full shadow-md pr-14 pl-14"
+                            className="w-full text-white bg-blue-400 border-blue-900 border-x  py-4 px-6 rounded-full shadow-md pr-14 pl-14 transition-all duration-500 placeholder:text-white hover:border-blue-800 "
                             placeholder="Search your memories..."
                             onFocus={() => setIsFocused(true)}
                         />
@@ -126,7 +126,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
                             <div className="absolute left-3 top-[50%] -translate-y-[50%] rounded-full bg-white text-black p-1.5">
                                 <Search className="w-4 h-4 md:w-6 md:h-6" />
                             </div>
-                            <div className="absolute right-3 top-[50%] -translate-y-[50%]  text-gray-600 p-1.5 font-light tracking-normal">
+                            <div className="absolute right-3 top-[50%] -translate-y-[50%]  text-white p-1.5 font-light tracking-normal">
                                 Ctrl + K
                             </div>
                         </div>
