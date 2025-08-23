@@ -12,16 +12,9 @@ const Hero = ({ setCurrent }: { setCurrent: Dispatch<SetStateAction<string>> }) 
    const [tempTitle, setTempTitle] = useState<string | null>(null);
    const [tempLink, setTempLink] = useState<string | null>(null);
 
-   const handleTitleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-       const newValue = event.target.value === '' ? null : event.target.value;
-       setTempTitle(newValue);
-   }
+  
 
-   const handleLinkChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-       const newValue = event.target.value === '' ? null : event.target.value;
-       setTempLink(newValue);
-
-   }
+   
 
    const handleGetStarted = () => {
        setHeroTitle(tempTitle);
